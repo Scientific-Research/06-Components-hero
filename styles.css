@@ -3,7 +3,10 @@ body {
   color: #444;
 }
 
-nav{
+nav {
+  font-size: 20px;
+  font-weight: 700;
+
   display: flex;
-  
+  justify-content: space-between; /*To push every item in one side!*/
 }
