@@ -1,3 +1,10 @@
+/*GENERAL RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   color: #444;
@@ -6,6 +13,7 @@ body {
 nav {
   font-size: 20px;
   font-weight: 700;
+  background-color: green;
 
   display: flex;
   justify-content: space-between; /*To push every item in one side!*/
@@ -43,7 +51,7 @@ h2 {
 
 section {
   padding: 96px 0; /*TOP-BOTTOM  LEFT-RIGHT*/
-
+  background-color: #f7f7f7;
   /*Instead of repeating the below statements, we can create a container class as a common class and use it whenever we need to center its content!*/
   /* margin: 0 auto;
   width: 1200px; */
@@ -58,6 +66,7 @@ section {
   /*NOTE: NOT ONLY WE NEED THE MARGIN AND AUTO, RATHER, WE NEED THE WIDTH TOO, OTHERWISE, IT WILL NOT WORK! TO MEMORIZE: WE NEED THESE THREE ITEMS TO CENTER THE CONTENS: MARGIN - AUTO - WIDTH*/
   margin: 0 auto;
   width: 1200px;
+  background-color: red;
 }
 
 header {
