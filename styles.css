@@ -66,10 +66,24 @@ section {
   /*NOTE: NOT ONLY WE NEED THE MARGIN AND AUTO, RATHER, WE NEED THE WIDTH TOO, OTHERWISE, IT WILL NOT WORK! TO MEMORIZE: WE NEED THESE THREE ITEMS TO CENTER THE CONTENS: MARGIN - AUTO - WIDTH*/
   margin: 0 auto;
   width: 1200px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 header {
+  background-color: orangered;
+
+  /* height: 100%; Percent will not work here. We need vh => view port height instead of percent!*/
+
+  height: 100vh; /*100 view port height => it means 100% of avaialbe view port => it means that covers all the page(the page that i see on the monitor)!*/
+
+  /* height: 50vh; I see the header section only in the half of the page */
+
+  /* height: 150vh; I see the header section in the one and half of the page */
+
+  /* width: 100vw; 100 view port width - We don't need to mention this here, because header is a block element and as default it covers all the 100% available width! */
+
+  /* width: 50vw; It covers 50 percent of the view port width => it means it covers only 50% of the width(not height) of the page that we are seeing in the monitor and not 100% */
+
   /* margin: 0 auto;
   width: 1200px; */
 
