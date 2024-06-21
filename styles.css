@@ -35,3 +35,35 @@ p {
   padding: 16px 32px; /*TOP-BOTTOM  LEFT-RIGHT*/
   border-radius: 9px;
 }
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0; /*TOP-BOTTOM  LEFT-RIGHT*/
+
+  /*Instead of repeating the below statements, we can create a container class as a common class and use it whenever we need to center its content!*/
+  /* margin: 0 auto;
+  width: 1200px; */
+
+  /*THIS BELOW METHOD THAT I USED ALREADY TO CENTER THE ITEMS, DOESN'T WORK HERE*/
+  /* display: flex;
+  justify-content: center; */
+}
+
+/*THIS IS THE COMMON CLASS TO CENTER THE CONTENT OF HEADER AND SECTION AND I HAVE TO ADD THIS CLASS TO THESE TWO PARTS IN HTML FILE => TAKE A LOOK AT THE HTML FILE PLEASE!*/
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  /* margin: 0 auto;
+  width: 1200px; */
+
+  /*THIS BELOW METHOD THAT I USED ALREADY TO CENTER THE ITEMS, DOESN'T WORK HERE*/
+  /* display: flex;
+  justify-content: center; */
+}
