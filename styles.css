@@ -21,3 +21,17 @@ p {
   line-height: 1.6;
   margin-bottom: 48px;
 }
+
+/*We start always with link and then visited separately- hover and then active separately*/
+.btn:link,
+:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+
+  display: inline-block; /*Default is inline - but in order to apply paddings, we have to change the display from inline to inline-block*/
+  padding: 16px 32px; /*TOP-BOTTOM  LEFT-RIGHT*/
+  border-radius: 9px;
+}
