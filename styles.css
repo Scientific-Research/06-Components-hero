@@ -20,6 +20,11 @@ nav {
 
   /*An example about how the linear-gradient works!*/
   /* background-image: linear-gradient(to right, red, blue); => it starts from red color at the left and goes to the right side till end with blue color*/
+
+  /*To make a small space between top of the page and nav => ONLY PADDING WORKS!*/
+  padding-top: 32px;
+  /* margin-top: 32px; */
+  /*using margin-top will not work here because of the container class which has more priority than nav element here and in there we set the top and bottom margin to 0! */
 }
 
 h1 {
