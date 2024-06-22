@@ -17,6 +17,9 @@ nav {
 
   display: flex;
   justify-content: space-between; /*To push every item in one side!*/
+
+  /*An example about how the linear-gradient works!*/
+  /* background-image: linear-gradient(to right, red, blue); => it starts from red color at the left and goes to the right side till end with blue color*/
 }
 
 h1 {
