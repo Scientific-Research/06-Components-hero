@@ -91,3 +91,11 @@ header {
   /* display: flex;
   justify-content: center; */
 }
+
+/*to keep the nav on top of the page and arrange other items in a column using display:flex*/
+.header-section-without-nav {
+  display: flex;
+  flex-direction: column; /*to bring items in a column, otherwise they are in a row!*/
+  margin-top: 150px;
+  width: 600px;
+}
