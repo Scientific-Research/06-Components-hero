@@ -90,12 +90,35 @@ header {
   /*THIS BELOW METHOD THAT I USED ALREADY TO CENTER THE ITEMS, DOESN'T WORK HERE*/
   /* display: flex;
   justify-content: center; */
+
+  position: relative; /*We need this here because of the below items in header-container class!*/
 }
 
 /*to keep the nav on top of the page and arrange other items in a column using display:flex*/
+/*THIS IS MY SOLUTION USING DISPLAY:FLEX*/
 .header-section-without-nav {
-  display: flex;
-  flex-direction: column; /*to bring items in a column, otherwise they are in a row!*/
-  margin-top: 150px;
-  width: 600px;
+  /* display: flex; */
+  /* flex-direction: column; to bring items in a column, otherwise they are in a row! */
+  /* margin-top: 150px; */
+  /* width: 600px;
+  background-color: violet; */
+}
+
+/*THIS IS JONAS SOLUTION USING ABSOLUTE POSITIONING*/
+.header-container {
+  width: 1200px;
+  position: absolute;
+
+  /*In relation to PARENT size:*/
+  left: 50%;
+  top: 50%;
+
+  /*Now, the items are in right and bottom side of the page and we have to use transform => translate property to bring it half to the left side and also half to the top side of the page! */
+
+  /*In relation to ELEMENT size:*/
+  /*first -50%: movement horizontally half to the left - 
+    second -50%: movement vertically half to the top*/
+  transform: translate(-50%, -50%);
+
+  background-color: violet;
 }
