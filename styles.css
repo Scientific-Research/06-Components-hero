@@ -93,6 +93,8 @@ header {
   justify-content: center; */
 
   position: relative; /*We need this here because of the below items in header-container class!*/
+
+  background-image: url(hero.jpg);
 }
 
 /*to keep the nav on top of the page and arrange other items in a column using display:flex*/
