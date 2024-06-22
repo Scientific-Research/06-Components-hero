@@ -97,9 +97,19 @@ header {
 
   position: relative; /*We need this here because of the below items in header-container class!*/
 
-  background-image: url(hero.jpg);
+  /*WE NEED THE LINEAR-GRADIENT TO MAKE THE BACKGROUND IMAGE DARKER! => A KIND OF STRANGE TRICK!
+  IT MEANS WE HAVE TWO BACKGROUND IMAGES NOW => FIRST IS LINEAR-GRADIENT() AND SECOND IS URL() WHICH IS ACTUALLY A STACK HERE AND THE LINEAR-GRADIENT() AS FIRST LAYER IS PLACED ON THE TOP OF SECOND LAYER WHICH IS URL() AND IS IN BOTTOM!*/
+  /* background-image: url(hero.jpg); */
+  background-image: linear-gradient(
+      /*FROM THIS COLOR*/ rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6) /*TO THIS COLOR*/
+        /*in our case, both of them are the same , but actually they can be different!*/
+    ),
+    url(hero.jpg);
   background-size: cover;
-  color: #d2bdbd; /*Not exactly the white color, due to the contast between the text and the background image!*/
+  /* color: #d2bdbd;  ONLY FOR TEST*/
+  /*Not exactly the white color, due to the contast between the text and the background image!*/
+  color: #fff;
 }
 
 /*to keep the nav on top of the page and arrange other items in a column using display:flex*/
