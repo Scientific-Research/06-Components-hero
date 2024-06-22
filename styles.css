@@ -13,7 +13,7 @@ body {
 nav {
   font-size: 20px;
   font-weight: 700;
-  background-color: green;
+  /* background-color: green; */
 
   display: flex;
   justify-content: space-between; /*To push every item in one side!*/
@@ -22,6 +22,7 @@ nav {
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 p {
@@ -70,7 +71,7 @@ section {
 }
 
 header {
-  background-color: orangered;
+  /* background-color: orangered; */
 
   /* height: 100%; Percent will not work here. We need vh => view port height instead of percent!*/
 
@@ -96,36 +97,44 @@ header {
 
 /*to keep the nav on top of the page and arrange other items in a column using display:flex*/
 /*THIS IS MY SOLUTION USING DISPLAY:FLEX*/
+/*//////////////////////////////////////////////////*/
 .header-section-without-nav {
-  /* display: flex; */
-  /* flex-direction: column; to bring items in a column, otherwise they are in a row! */
-  /* margin-top: 150px; */
-  /* width: 600px;
-  background-color: violet; */
+  display: flex;
+  flex-direction: column;
+  /* to bring items in a column, otherwise they are in a row! */
+  margin-top: 150px;
+  /* width: 600px; OR the following:*/
+  width: 50%;
+  /* background-color: violet;  */
 }
+/*//////////////////////////////////////////////////*/
 
 /*THIS IS JONAS SOLUTION USING ABSOLUTE POSITIONING*/
+/*//////////////////////////////////////////////////*/
 .header-container {
-  width: 1200px;
-  position: absolute;
+  /* width: 1200px;
+  position: absolute; */
 
   /*In relation to PARENT size:*/
-  left: 50%;
-  top: 50%;
+  /* left: 50%;
+  top: 50%; */
 
   /*Now, the items are in right and bottom side of the page and we have to use transform => translate property to bring it half to the left side and also half to the top side of the page! */
 
   /*In relation to ELEMENT size:*/
   /*first -50%: movement horizontally half to the left - 
     second -50%: movement vertically half to the top*/
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 
-  background-color: violet;
+  /* background-color: violet; */
 
   /* text-align: center; */
 }
 
 /*We make the width half of the above width to squeeze the text and header to the right side - It is useful because of the photo of the lady behind that - we can see the face of the lady clear!*/
 .header-container-inner {
-  width: 50%;
+  /* width: 50%; */
+  /*600px*/
+  /* background-color: blue; */
 }
+/*//////////////////////////////////////////////////*/
