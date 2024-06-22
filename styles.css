@@ -95,6 +95,8 @@ header {
   position: relative; /*We need this here because of the below items in header-container class!*/
 
   background-image: url(hero.jpg);
+  background-size: cover;
+  color: #d2bdbd; /*Not exactly the white color, due to the contast between the text and the background image!*/
 }
 
 /*to keep the nav on top of the page and arrange other items in a column using display:flex*/
