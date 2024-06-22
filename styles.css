@@ -121,4 +121,11 @@ header {
   transform: translate(-50%, -50%);
 
   background-color: violet;
+
+  /* text-align: center; */
+}
+
+/*We make the width half of the above width to squeeze the text and header to the right side - It is useful because of the photo of the lady behind that - we can see the face of the lady clear!*/
+.header-container-inner {
+  width: 50%;
 }
